@@ -1,0 +1,3 @@
+CTRL + K + C -------> yorum satirina donusturuyor.
+SHIFT + Alt + Asagi Ok ----> ust satiri asagiya kopyaliyor.
+CTRL + /--------> Tum satiri yoruma ceviriyor.

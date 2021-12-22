@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            background: blue;
+        }
+        p{
+            color: purple;
+            background: seagreen;
+        }
+        /* her ikisi tek satirda toplamak istersem
+        h1,p {} seklinde yapmak gerekir */
+
+        /* sadece id si logo olan etiketleri secmek istersem
+        # --> id selector anlamina gelir  */
+        #logo {
+            color: seashell;
+            background: slateblue;
+        }
+        /* class a gore secmek istersem yani class i info olanlari secmek istersem */
+        .Info{
+            color: thistle;
+            background: darkkhaki;
+        }
+        /* id si logo veya class i lead info olanlari secip toplu stillendirme yapmak istersem  */
+        #logo, .lead .Info {
+            /* sadece lead ya da sadece info da yazabilirdim */
+            color: darkslategrey;
+            background-color: darkviolet;
+        }
+        /* hem id si para1 hemde klasi lead olanlari secmek istersem aradaki virgulu kaldiririm bosluksuz */
+        #para1.lead{
+
+        }
+        /* a larin altindaki cizgileri kaldirmak istersem  */
+        a {
+            text-decoration: none ;
+        }
+        /* sadece ul in altinaki li nin altindaki a etiketlerini secmek istersem
+        ul , li nin li  de a nin parent elementidir.tam tersi icin ise child/children elementi diyebiliriz */
+        ul li a {
+            text-decoration: none;
+        }
+        /* class i info olanlarin altindaki span lere islem yapmak istersem */
+        .Info span {
+            color: maroon;
+        }
+        /* class i info olup span i de primary olanlari cekmek istersem */
+        .Info .primary {
+            color: fuchsia;
+        }
+        /* sayfadaki tum elemanlari secmek istersem * kullanirim */
+        * {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header1</h1>
+        <h1 id= logo>Logo</h1>
+
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead Info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, libero?</p>
+    <p class="Info">Lorem ipsum <span class="primary">dolor</span>  sit amet consectetur adipisicing elit. Vel, corporis.</p>
+    <p class="Info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, at.</p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+
+header{
+    height: 144px;
+    width: 100%;
+    background-color: blue;
+}
+.header-top {
+    background-color: aqua;
+    height: 92px
+}
+.header-top a{ 
+    height: 100%;
+}
+.logo{
+    display: inline-block;
+    margin: auto;
+    width: 115px;
+    height: 100%;
+    border: 1px solid white;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+.header-bottom{
+    background-color: brown;
+    height: 44px;
+}
+
+main{
+    height:800px;
+    background-color: black;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php"> 
+
+        <label for="name">NAAME</label>  <br>
+        <input type="text" id="name" name="name"> <br>
+        
+        <label for="email">EMAIL</label> <br>
+        <input type="email" id="email" name="email"><br>
+        
+        <!-- <button type="menu">MENU<br> -->
+        
+        <label for="pass">PASSWORD</label><br>
+        <input type="password" id="pass" name="password"><br>
+
+        <label for="date">DATE</label><br>
+        <input type="date" id="date" name="date"><br>
+        <!-- </button> -->
+
+        <input type="submit" value="gonder">
+        <input type="reset" value="sifirla"> <br>
+        <button type="submit">para sifirla </button><br>
+
+        Gender <br>
+        Male
+        <input type="radio" name="gender" value="male" checked>
+        <!-- checked otomatik isaretleme icin -->
+        Female
+        <input type="radio" name="gender" value="female"><br><br>
+
+        Hobbies <br>
+        technology
+        <input type="checkbox" name="tech" id="tech">
+        music
+        <input type="checkbox" name="music" id="music"><br><br>
+
+        DEGREE <br>
+        <select name="degre" id="degre">
+            <option value="bachelor">LISANS</option>
+            <option value="master" selected>YUKSEK LISANS</option><br>
+
+        </select> <br><br>
+        BURAYA YAZABILIRSIN <br>
+        <textarea name="message" id="message" rows="6" cols="100" placeholder="Your Text Message"></textarea>
+        <!-- text areanin kac satir ve sutunluk alana sahip olmasi gerektigini belirtiyoruz yani buyuklugunu
+        placeholder da text areanin icindeki yazi Diger inputlara da yazabilirsin -->
+    </form>
+
+
+</body>
+</html>
